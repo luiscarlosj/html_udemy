@@ -1,18 +1,16 @@
-//var resposta = confirm("Deseja excluir");
 
-/*console.log(resposta);
-*/
 
-var a = 10;
+document.querySelector("#calcular").addEventListener("click", function (){
 
-var b = 33;
+ let valorA = document.querySelector("#valorA").value;
+ let valorB = document.querySelector("#valorB").value;
 
-//alert(a*b);
+ if(valorA.length >0 && valorB.length >0) {
 
-function soma(a , b){
+      alert(parseInt(valorA) + parseInt(valorB));
+ }else{
 
-	return a+b;
-
-}
-
-console.log(soma(2,5));
+ 	  alert("Digite os dois valores");
+ }
+  
+});
